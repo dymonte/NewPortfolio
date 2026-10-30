@@ -198,17 +198,20 @@ export default function ProjectCarousel() {
                   </ul>
                 </div>
               )}
-              <div className="flex flex-row flex-wrap gap-3">
+              <div className="mt-8 flex flex-row flex-wrap gap-4">
                 {selectedProject.links.map((link) => (
-                  <a
-                    key={link}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#DE424A] px-6 py-3 text-sm font-medium text-white transition hover:brightness-110"
-                  >
-                    {getLinkLabel(link)} ↗
-                  </a>
+                  <div key={link.url} className="flex flex-col items-start gap-1.5">
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={link.message}
+                      className="inline-flex items-center gap-2 rounded-full bg-[#DE424A] px-6 py-3 text-sm font-medium text-white transition hover:brightness-110"
+                    >
+                      {link.name} ↗
+                    </a>
+                    <span className="px-2 text-xs text-[#A6D4DD]/70">{link.message}</span>
+                  </div>
                 ))}
               </div>
 

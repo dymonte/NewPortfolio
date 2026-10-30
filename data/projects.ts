@@ -3,12 +3,18 @@ export type Techno = {
     link: string;
 };
 
+export type ProjectLink = {
+    url: string;
+    name: string;
+    message: string;
+};
+
 export type Project = {
     title: string;
     category: string;
     image: string;
     description: string;
-    links: string[];
+    links: ProjectLink[];
     techno?: Techno[];
 };
 
@@ -20,69 +26,93 @@ export const projects: Project[] = [
         description:
             'A personal Discord game project, this bot lets you open random cards at regular intervals and then collect and trade them.\n' +
             'I also developed an API to retrieve information about the cards.',
-        links: ['https://github.com/dymonte/bot-wankul-discord/'],
+        links: [
+            {
+                url: 'https://github.com/dymonte/bot-wankul-discord/',
+                name: 'GitHub',
+                message: 'Source code of the Discord bot',
+            },
+        ],
         techno: [
             {
                 name: 'discord.py',
-                link: 'https://discordpy.readthedocs.io/en/stable/pyt'
+                link: 'https://discordpy.readthedocs.io/en/stable/',
             },
-        ]
+        ],
     },
     {
         title: 'API Wankul',
         category: 'Personal Project',
         image: '/images/apiwankul.png',
         description:
-            'Un projet personnel d\'API qui est utilisée par le projet WanRoll.',
-        links: ['https://github.com/dymonte/bot-wankul-discord/'],
+            'A personal API project, used by the WanRoll project to retrieve information about the cards.',
+        links: [
+            {
+                url: 'https://github.com/dymonte/api-wankul/',
+                name: 'GitHub',
+                message: 'Source code of the API',
+            },
+        ],
         techno: [
             {
                 name: 'expressjs',
-                link: 'https://expressjs.com/'
+                link: 'https://expressjs.com/',
             },
-        ]
+        ],
     },
     {
         title: 'miniJaja',
         category: 'University Project - Java',
         image: '/images/mjj.png',
         description:
-            'Un projet de développement web présentant mes compétences techniques.',
-        links: ['https://github.com/dymonte/miniJaja'],
+            'A web development project showcasing my technical skills.',
+        links: [
+            {
+                url: 'https://github.com/dymonte/miniJaja',
+                name: 'GitHub',
+                message: 'Source code of the project',
+            },
+        ],
         techno: [
             {
                 name: 'ANTLR',
-                link: 'https://www.antlr.org/'
+                link: 'https://www.antlr.org/',
             },
             {
                 name: 'Maven',
-                link: 'https://maven.apache.org/'
-            }
-        ]
+                link: 'https://maven.apache.org/',
+            },
+        ],
     },
     {
         title: 'Laby',
-        category: 'University Project - C (optimisation)',
+        category: 'University Project - C (optimization)',
         image: '/images/Laby.png',
         description:
             'This project involves generating random mazes and implementing a pathfinding system to find a path to the exit.\n' +
-            'The code was written in C and optimized for very large arrays (in the billions of cells).\n ' +
-            'A performance monitoring system was implemented to test the program\'s reaction on very large arrays.',
-        links: ['https://github.com/dymonte/Laby/'],
+            'The code was written in C and optimized for very large arrays (in the billions of cells).\n' +
+            "A performance monitoring system was implemented to test the program's behavior on very large arrays.",
+        links: [
+            {
+                url: 'https://github.com/dymonte/Laby/',
+                name: 'GitHub',
+                message: 'Source code',
+            },
+        ],
         techno: [
             {
                 name: 'C',
-                link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
+                link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
             },
             {
                 name: 'Doxygen',
-                link: 'https://www.doxygen.nl/'
+                link: 'https://www.doxygen.nl/',
             },
             {
                 name: 'JaCoCo',
-                link: 'https://github.com/jacoco'
-            }
-        ]
+                link: 'https://github.com/jacoco',
+            },
+        ],
     },
     {
         title: 'Laby3D',
@@ -91,42 +121,65 @@ export const projects: Project[] = [
         description:
             'The goal of this project was to create an interactive game using OpenGL 1.1.\n' +
             'We were given a few requirements, such as the inclusion of collisions, animations, and textures.\n' +
-            'This project was completed by a group of three people. We reused a part of my previous work on Laby for the maze generation.',
-        links: ['https://github.com/Unity2654/Labyrinthe']
+            'This project was completed by a group of three people. We reused part of my previous work on Laby for the maze generation.',
+        links: [
+            {
+                url: 'https://github.com/Unity2654/Labyrinthe',
+                name: 'GitHub',
+                message: "Group's repository",
+            },
+        ],
     },
     {
         title: 'Nyx',
         category: 'University Project - UI/UX',
         image: '/images/nyx.png',
         description:
-            'A figma project for a video game store interface.\n' +
+            'A Figma project for a video game store interface.\n' +
             'Working in pairs, we were tasked with creating a detailed mockup that included prototyping.\n' +
             'The focus was on the project\'s creativity, so we decided to design a game store specializing in relaxing games and adapted the interface to convey that same concept.',
-        links: ['https://www.figma.com/design/IWAByGk3IIHvHFMwnDrg1w/Projet-IHM-CC2---Etudiant'],
+        links: [
+            {
+                url: 'https://www.figma.com/design/IWAByGk3IIHvHFMwnDrg1w/Projet-IHM-CC2---Etudiant',
+                name: 'Figma',
+                message: 'Mockup',
+            },
+            {
+                url: 'https://www.figma.com/proto/IWAByGk3IIHvHFMwnDrg1w/Projet-IHM-CC2---Etudiant?node-id=0-1&t=fBc8IbCD0ywGckb3-1',
+                name: 'Figma',
+                message: 'Interactive prototype'
+            }
+        ],
         techno: [
             {
                 name: 'Figma',
-                link: 'https://www.figma.com/'
-            }
-        ]
+                link: 'https://www.figma.com/',
+            },
+        ],
     },
     {
         title: 'Annalogue',
-        category: 'University Project - MVN, Web',
-        image: '/images/Laby3D.png',
+        category: 'University Project - Maven, Web',
+        image: '/images/annalogue.png',
         description:
             'For this project, a role-playing system was set up among the students to simulate a client and a group of developers.\n' +
-            'We had to set up a website that would allow students to access documents and suggest corrections.',
-        links: ['https://github.com/dymonte/AnnalogueSpring', 'test'],
+            'We had to build a website that would allow students to access documents and suggest corrections.',
+        links: [
+            {
+                url: 'https://github.com/dymonte/AnnalogueSpring',
+                name: 'GitHub',
+                message: 'Source code of the website',
+            },
+        ],
         techno: [
             {
                 name: 'C',
-                link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
+                link: 'https://en.wikipedia.org/wiki/C_(programming_language)',
             },
             {
                 name: 'Maven',
-                link: 'https://maven.apache.org/'
-            }
-        ]
+                link: 'https://maven.apache.org/',
+            },
+        ],
     },
 ];
