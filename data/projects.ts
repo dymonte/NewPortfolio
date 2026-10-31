@@ -182,4 +182,19 @@ export const projects: Project[] = [
             },
         ],
     },
+    {
+        title: 'Courtisans',
+        category: 'University Project - Godot (2D)',
+        image: '/images/Courtisans.png',
+        description:
+            'A project for groups of 7 people consisting of adapting a board game into a video game with multiplayer functionality.',
+        links: [
+        ],
+        techno: [
+            {
+                name: 'Godot (2D)',
+                link: 'https://godotengine.org/',
+            },
+        ],
+    },
 ];
