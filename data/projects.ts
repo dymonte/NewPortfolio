@@ -42,7 +42,7 @@ export const projects: Project[] = [
     },
     {
         title: 'API Wankul',
-        category: 'Personal Project',
+        category: 'Personal Project - express',
         image: '/images/apiwankul.png',
         description:
             'A personal API project, used by the WanRoll project to retrieve information about the cards.',
@@ -194,6 +194,21 @@ export const projects: Project[] = [
             {
                 name: 'Godot (2D)',
                 link: 'https://godotengine.org/',
+            },
+        ],
+    },
+    {
+        title: 'New Portfolio',
+        category: 'University Project - Web',
+        image: '/images/NewPortfolio.png',
+        description:
+            'The website you\'re on right now, to present my projects.',
+        links: [
+        ],
+        techno: [
+            {
+                name: 'Next.js',
+                link: 'https://nextjs.org/',
             },
         ],
     },
