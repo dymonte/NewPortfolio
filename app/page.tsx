@@ -60,7 +60,7 @@ export default function Home() {
 
         />
 
-        <div className={`relative z-10 p-6 flex-3 leading-[0.9] text-[clamp(4rem,10vw,10rem)] text-[#DE424A]`} style={{ opacity }}>
+        <div className={`relative z-10 p-6 flex-3 leading-[0.9] text-[clamp(4rem,20vw,20rem)] text-[#DE424A]`} style={{ opacity }}>
           <h1> DYLAN&apos;S </h1>
           <h1> PORTFOLIO </h1>
           <BarCode content="WELCOME IN A NEW WORLD"></BarCode>
