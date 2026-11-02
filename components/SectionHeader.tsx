@@ -17,8 +17,8 @@ export default function SectionHeader({
   subtitle,
 }: SectionHeaderProps) {
   return (
-    <header className="mb-3.5 p-10">
-      <h2 className={`${anton.className} leading-[0.9] text-[#DE424A] text-[clamp(3rem,7vw,7rem)] m-0`}>
+    <header className="ml-10 mb-5">
+      <h2 className={`${anton.className} leading-[0.9] text-[#DE424A] text-[clamp(2rem,5vw,5rem)] m-0`}>
         {title}
       </h2>
 

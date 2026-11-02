@@ -60,7 +60,7 @@ export default function Home() {
 
         />
 
-        <div className={`relative z-10 p-6 flex-3 leading-[0.9] text-[clamp(4rem,20vw,20rem)] text-[#DE424A]`} style={{ opacity }}>
+        <div className={`relative z-10 p-6 flex-3 leading-[0.9] text-[clamp(4rem,15vw,10rem)] text-[#DE424A]`} style={{ opacity }}>
           <h1> DYLAN&apos;S </h1>
           <h1> PORTFOLIO </h1>
           <BarCode content="WELCOME IN A NEW WORLD"></BarCode>
@@ -97,7 +97,7 @@ export default function Home() {
           subtitle="SOME INFOS"
         />
         <div className="flex flex-col md:flex-row space-b">
-          <p className={`${baiJamjuree.className} text-[#A6D4DD] text-2xl flex-1 p-10`}>
+          <p className={`${baiJamjuree.className} text-[#A6D4DD] text-2xl flex-1 ml-10`}>
             Hello, I am <span className="font-extrabold">Dylan</span> and I am a software developer student.
             Currently in my 2nd year in <span className="font-extrabold">Besançon</span> for the <span className="font-extrabold">Master Informatique Ingénieurie systèmes et logiciels</span>,
             I am looking for an opportunity to complete an internship as part of my studies
