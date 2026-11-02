@@ -91,7 +91,7 @@ export default function Home() {
 
 
       </section>
-      <section id="about" className="mb-10 mt-10">
+      <section id="about" className="pb-10 pt-10">
         <SectionHeader
           title="ABOUT ME"
           subtitle="SOME INFOS"
@@ -107,7 +107,7 @@ export default function Home() {
 
       </section>
 
-      <section id="about" className="mb-10 mt-10">
+      <section id="about" className="pb-10 pt-10">
         <SectionHeader
           title="MY JOURNEY"
           subtitle="STEPS OF MY LIFE"
@@ -115,7 +115,7 @@ export default function Home() {
         <Timeline />
       </section>
 
-      <section id="projects" className="mb-10 mt-10">
+      <section id="projects" className="pb-10 pt-10">
         <SectionHeader
           title="MY PROJECTS"
           subtitle="SOME EXAMPLES OF WORK"
