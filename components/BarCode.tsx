@@ -1,9 +1,4 @@
-import { Libre_Barcode_39 } from "next/font/google";
-
-const barcodeFont = Libre_Barcode_39({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { barcodeFont } from '@/fonts';
 
 type BarCodeProps = {
     content: string;
@@ -11,12 +6,12 @@ type BarCodeProps = {
 
 export default function BarCode({
     content
-}: BarCodeProps) {
-    return(     
-    <p
-        className={`${barcodeFont.className} p-1 tracking-[0.1rem] text-5xl text-[#DE424A] text-[clamp(1rem,3vw,3rem)]`}
-      >
-        {content}
-    </p>
+}: Readonly<BarCodeProps>) {
+    return (
+        <p
+            className={`${barcodeFont.className} p-1 tracking-[0.1rem] text-5xl text-[#DE424A] text-[clamp(1rem,3vw,3rem)]`}
+        >
+            {content}
+        </p>
     );
 }
