@@ -1,10 +1,5 @@
-import { Anton } from "next/font/google";
-import BarCode from "@/components/BarCode"
-
-const anton = Anton({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { anton } from '@/fonts';
+import BarCode from '@/components/BarCode';
 
 
 type SectionHeaderProps = {
@@ -15,14 +10,14 @@ type SectionHeaderProps = {
 export default function SectionHeader({
   title,
   subtitle,
-}: SectionHeaderProps) {
+}: Readonly<SectionHeaderProps>) {
   return (
     <header className="ml-10 mb-5">
       <h2 className={`${anton.className} leading-[0.9] text-[#DE424A] text-[clamp(2rem,5vw,5rem)] m-0`}>
         {title}
       </h2>
 
-    <BarCode content={subtitle}></BarCode>
+      <BarCode content={subtitle}></BarCode>
     </header>
   );
 }
