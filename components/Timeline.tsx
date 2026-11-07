@@ -1,15 +1,10 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Bai_Jamjuree } from "next/font/google";
+import { baiJamjuree } from '@/fonts';
 
-const baiJamjuree = Bai_Jamjuree({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-baijamjuree",
-})
 
 type TimelineStep = {
   period: string;
@@ -34,7 +29,7 @@ const steps: TimelineStep[] = [
     period: "2020 - 2022",
     title: "Lycée Heinrich Nessel - Haguenau",
     description:
-      "Chose the NSI specialization, with a focus on Python development and some theorical aspects. Obtained the \"Bac mention bien\"",
+      "Chose the NSI specialization, with a focus on Python development and some theorical aspects. Obtained the Baccalauréat with \"good\" mention.",
   },
   {
     period: "2022 - 2025",

@@ -2,7 +2,7 @@
 
 // --- Externs ---
 import Image from 'next/image';
-import { Anton, Bai_Jamjuree } from 'next/font/google';
+import { anton, baiJamjuree } from '@/fonts';
 
 // --- Components ---
 import SectionHeader from '@/components/SectionHeader';
@@ -12,19 +12,6 @@ import ProjectCarousel from '@/components/ProjectCarousel';
 
 
 import { useEffect, useState } from 'react';
-
-const anton = Anton({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-anton',
-});
-
-const baiJamjuree = Bai_Jamjuree({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-baijamjuree',
-})
-
 
 
 export default function Home() {
@@ -81,7 +68,7 @@ export default function Home() {
           style={{ opacity }}
         >
           <Image
-            src="/images/scrolldown.svg"
+            src="/svg/scrolldown.svg"
             alt=""
             width={32}
             height={32}
@@ -98,9 +85,13 @@ export default function Home() {
         />
         <div className="flex flex-col md:flex-row space-b">
           <p className={`${baiJamjuree.className} text-[#A6D4DD] text-2xl flex-1 ml-10`}>
-            Hello, I am <span className="font-extrabold">Dylan</span> and I am a software developer student.
-            Currently in my 2nd year in <span className="font-extrabold">Besançon</span> for the <span className="font-extrabold">Master Informatique Ingénieurie systèmes et logiciels</span>,
-            I am looking for an opportunity to complete an internship as part of my studies
+
+            Hello, I am <span className="font-extrabold">Dylan</span>.
+            <br /><br />
+            I'm a software engineering student, currently pursuing my second year of a Master's degree in Computer Science, specializing in Systems and Software Engineering in Besançon, France.
+            I particularly enjoy tackling technical challenges, solving problems and putting my skills to work for a team. I want to continue to learn new technologies and improve my skills through new projects. <br />
+            I'm currently looking for an internship opportunity where I can contribute to real-world projects,
+            gain professional experience and continue growing as a developer.
           </p>
           <p className="flex-1"></p>
         </div>
