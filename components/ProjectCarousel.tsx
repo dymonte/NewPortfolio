@@ -6,11 +6,6 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { projects, type Project } from '@/data/projects';
 
-function getLinkLabel(url: string) {
-  if (url.includes('github.com')) return 'See on GitHub';
-  if (url.includes('figma.com')) return 'See on Figma';
-  return 'See the project';
-}
 
 export default function ProjectCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -93,7 +88,7 @@ export default function ProjectCarousel() {
 
                     {index === selectedIndex && (
                       <p className="mt-3 text-sm text-[#A6D4DD]/80">
-                        Cick to discover
+                        Click to discover
                       </p>
                     )}
                   </div>
@@ -143,8 +138,7 @@ export default function ProjectCarousel() {
         }}
       >
         {selectedProject && (
-          <div
-            role="dialog"
+          <dialog
             aria-label={selectedProject.title}
             className="relative flex max-h-[90vh] w-[min(90vw,900px)] flex-col overflow-hidden rounded-2xl bg-[#101719] text-[#A6D4DD] shadow-2xl"
           >
@@ -214,10 +208,8 @@ export default function ProjectCarousel() {
                   </div>
                 ))}
               </div>
-
-
             </div>
-          </div>
+          </dialog>
         )}
       </Popup>
     </section>
