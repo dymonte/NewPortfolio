@@ -96,7 +96,7 @@ export const projects: Project[] = [
             {
                 url: 'https://github.com/dymonte/Laby/',
                 name: 'GitHub',
-                message: 'Source code',
+                message: 'Source code of the project',
             },
         ],
         techno: [
@@ -187,7 +187,8 @@ export const projects: Project[] = [
         category: 'University Project - Godot (2D)',
         image: '/images/Courtisans.png',
         description:
-            'A project for groups of 7 people consisting of adapting a board game into a video game with multiplayer functionality.',
+            'A project for groups of 7 people consisting of adapting a board game into a video game with multiplayer functionality.\n' +
+            'My part of the work was focused on the ',
         links: [
         ],
         techno: [
