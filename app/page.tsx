@@ -86,7 +86,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row space-b">
           <p className={`${baiJamjuree.className} text-[#A6D4DD] text-2xl flex-1 ml-10`}>
 
-            Hello, I am <span className="font-extrabold">Dylan</span>.
+            Hello, I am <span className="font-extrabold">Dylan Monteneri</span>.
             <br /><br />
             I'm a software engineering student, currently pursuing my second year of a Master's degree in Computer Science, specializing in Systems and Software Engineering in Besançon, France.
             I particularly enjoy tackling technical challenges, solving problems and putting my skills to work for a team. I want to continue to learn new technologies and improve my skills through new projects. <br />
