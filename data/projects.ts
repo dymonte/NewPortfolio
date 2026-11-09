@@ -65,7 +65,9 @@ export const projects: Project[] = [
         category: 'University Project - Java',
         image: '/images/mjj.png',
         description:
-            'A web development project showcasing my technical skills.',
+            'The goal was to implement an IDE that would allow users to write, compile, and interpret a programming language created specifically for this purpose: miniJaja.\n' +
+            'This language consisted of simple instructions with a syntax derived from Java. \n' +
+            'Compilation generated programs in JajaCode, another language created for this purpose that was syntactically similar to assembly language.',
         links: [
             {
                 url: 'https://github.com/dymonte/miniJaja',
@@ -82,6 +84,10 @@ export const projects: Project[] = [
                 name: 'Maven',
                 link: 'https://maven.apache.org/',
             },
+            {
+                name: 'JaCoCo',
+                link: 'https://github.com/jacoco',
+            },
         ],
     },
     {
@@ -91,7 +97,7 @@ export const projects: Project[] = [
         description:
             'This project involves generating random mazes and implementing a pathfinding system to find a path to the exit.\n' +
             'The code was written in C and optimized for very large arrays (in the billions of cells).\n' +
-            "A performance monitoring system was implemented to test the program's behavior on very large arrays.",
+            'A performance monitoring system was implemented to test the program\'s behavior on very large arrays.',
         links: [
             {
                 url: 'https://github.com/dymonte/Laby/',
@@ -107,10 +113,6 @@ export const projects: Project[] = [
             {
                 name: 'Doxygen',
                 link: 'https://www.doxygen.nl/',
-            },
-            {
-                name: 'JaCoCo',
-                link: 'https://github.com/jacoco',
             },
         ],
     },
