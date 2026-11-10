@@ -205,6 +205,11 @@ export const projects: Project[] = [
         description:
             'The website you\'re on right now, to present my projects.',
         links: [
+            {
+                url: 'https://github.com/dymonte/NewPortfolio',
+                name: 'GitHub',
+                message: 'Source code of the website',
+            },
         ],
         techno: [
             {
