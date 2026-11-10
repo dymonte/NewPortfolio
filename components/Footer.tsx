@@ -3,7 +3,7 @@ import { anton, baiJamjuree } from '@/fonts';
 
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-[#DE424A]/30 bg-[#151515] py-8">
+        <footer className="w-full border-t border-[#DE424A]/30 bg-[#151515] py-8 px-8">
 
             <div className={`${baiJamjuree.className} mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row`}>
 
